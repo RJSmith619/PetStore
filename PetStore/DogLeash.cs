@@ -8,7 +8,7 @@ namespace PetStore
 {
     public class DogLeash : Product
     {
-        int LengthInches;
-        string Material;
+        public int LengthInches;
+        public string Material;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PetStore;
 
 
 Console.WriteLine("Press 1 to add a product");
@@ -14,7 +15,12 @@ while(userInput.ToLower() != "exit")
 {
     if(int.Parse(userInput) == 1)
     {
-        Console.WriteLine("Testing");
+        CatFood food = new CatFood();
+
+        Console.WriteLine("Please enter the weight in pounds: ");
+        food.WeightPounds = int.Parse(Console.ReadLine());
+
+
     }
     Console.WriteLine("Press 1 to add a product");
     Console.WriteLine("Type 'exit' to quit");

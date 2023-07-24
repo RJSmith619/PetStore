@@ -8,9 +8,9 @@ namespace PetStore
 {
     public class Product
     {
-        string Name;
-        decimal Price;
-        int Quantity;
-        string? Description;
+        public string Name;
+        public decimal Price;
+        public int Quantity;
+        public string? Description;
     }
 }

@@ -8,7 +8,7 @@ namespace PetStore
 {
     public class CatFood : Product
     {
-        double WeightPounds;
-        bool KittenFood;
+        public double WeightPounds;
+        public bool KittenFood;
     }
 }
