@@ -33,7 +33,14 @@ namespace PetStore
 
         public DogLeash GetDogLeashByName(string name) 
         {
-            return dictionaryDog[name];
+            try
+            {
+                return dictionaryDog[name];
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public List<Product> GetAllProducts()

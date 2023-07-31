@@ -49,9 +49,15 @@ while(userInput.ToLower() != "exit")
         userInput = Console.ReadLine();
 
         DogLeash leash = logic.GetDogLeashByName(userInput);
-
-        Console.WriteLine(String.Format("Product Name: {0}\nPrice: {1}\nQuanitty: {2}\nDescription: {3}\nMaterial: {4}\nLength In Inches: {5}",
-            leash.Name, leash.Price, leash.Quantity, leash.Description, leash.Material, leash.LengthInches));
+        if (leash == null)
+        {
+            Console.WriteLine("Item could not be found!");
+        }
+        else
+        {
+            Console.WriteLine(String.Format("Product Name: {0}\nPrice: {1}\nQuanitty: {2}\nDescription: {3}\nMaterial: {4}\nLength In Inches: {5}",
+                leash.Name, leash.Price, leash.Quantity, leash.Description, leash.Material, leash.LengthInches));
+        }
     }
 
 
